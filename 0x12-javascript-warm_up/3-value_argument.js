@@ -10,4 +10,4 @@ argv.forEach(() => len++);
 
 
 
-console.log(len === 2 ? 'No argument' : argv[2])
+console.log(len === 2 ? 'No argument' : argv[2]);
