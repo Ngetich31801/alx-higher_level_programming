@@ -1,18 +1,24 @@
 #!/usr/bin/node
-module.exports = class rectangle
-    def __init__(self, w, h):
-        if w <= 0 or h <= 0 or not isinstance(w, int) or not isinstance(h, int):
-            # Create an empty object if w or h is 0 or not a positive integer
-            self.width = 0
-            self.height = 0
-        else:
-            self.width = w
-            self.height = h
-    
-    def print(self):
-        if self.width == 0 or self.height == 0:
-            print("Empty rectangle")
-        else:
-            for _ in range(self.height):
-                print("X" * self.width)
+module.exports = class Rectangle {
+  constructor(w, h) {
+    if (w <= 0 || h <= 0 || !Number.isInteger(w) || !Number.isInteger(h)) {
+      // Create an empty object if w or h is 0 or not a positive integer
+      this.width = 0;
+      this.height = 0;
+    } else {
+      this.width = w;
+      this.height = h;
+    }
+  }
+
+  print() {
+    if (this.width === 0 || this.height === 0) {
+      console.log("Empty rectangle");
+    } else {
+      for (let i = 0; i < this.height; i++) {
+        console.log("X".repeat(this.width));
+      }
+    }
+  }
+}
 
