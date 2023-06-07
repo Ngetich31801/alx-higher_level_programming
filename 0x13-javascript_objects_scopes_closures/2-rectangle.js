@@ -1,5 +1,5 @@
 #!/usr/bin/node
-class Rectangle {
+module.export=class Rectangle {
   constructor(w, h) {
     if (w <= 0 || h <= 0 || !Number.isInteger(w) || !Number.isInteger(h)) {
       // Create an empty object if width or height is not a positive integer
